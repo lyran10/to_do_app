@@ -22,7 +22,7 @@ const Displaytodo = (props) => {
   useEffect(() => {
     fetching()
       .then(data =>setto_do_data(data.data))
-      .catch(error => console.log(error))
+      .catch(error => console.log(`Could not fetch :${error}`))
   },[task])
 
   
