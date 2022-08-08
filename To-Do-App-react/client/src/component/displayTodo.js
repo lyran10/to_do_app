@@ -20,10 +20,12 @@ const Displaytodo = (props) => {
   }
 
   useEffect(() => {
-      fetching()
+    fetching()
       .then(data =>setto_do_data(data.data))
       .catch(error => console.log(error))
   },[task])
+
+  
 
   const handleDelete = (id) => {
     let body = {task : parseInt(id)}

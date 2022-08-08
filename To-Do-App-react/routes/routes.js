@@ -10,6 +10,7 @@ router.get('/getdata', getData)
 router.post('/postdata', postData)
 // using delete method to delete an order by using the deleteOrder function
 router.delete('/delete',deleteData);
+
 router.delete('/checked',checkedData);
 // using put method to upadate an order by using the updateOrder function
 router.put('/update',updateData);
